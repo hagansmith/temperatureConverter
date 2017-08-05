@@ -11,10 +11,10 @@
 			<input id = "temperature" type="number" name="temperature">
 		
 		<p>Select the scale you want to convert to.</p>
-			<input type="radio" name="scale" value="Fahrenheit"> Fahrenheit
-			<input type="radio" name="scale" value="Celsius"> Celsius
+			<input id=rdoFah type="radio" name="scale" value="Fahrenheit"> to Fahrenheit
+			<input id=rdoCel type="radio" name="scale" value="Celsius"> to Celsius
 		<br><br>
-			<button id = "btnConvert"> Convert Temperature</button>
+			<button type="button"  id = "btnConvert"> Convert Temperature</button>
 			<input type="reset" value="Reset">	
 </form>
 
@@ -22,7 +22,7 @@
 		
 
 
-<h3 id = "tempConverted"> Your the temp in __ is __</h3> <!-- This needs to be in the final js -->
+<h3 id = "tempConverted"></h3>
 
 
 <script type="text/javascript" src="./main.js"></script>
