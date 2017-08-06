@@ -1,3 +1,19 @@
 body {
 	background-color: gold;
 }
+
+h3.high {
+	color: red;
+}
+
+h3.low {
+	color: blue;
+}
+
+h3.mid {
+	color: green;
+}
+
+h3.black {
+	color: black;
+}
