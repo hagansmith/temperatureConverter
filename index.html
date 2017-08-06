@@ -5,8 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="./main.css">
 </head>
 <body>
-<h2>THE Amazing Temperature Converter!!!</h2>
-<form id = "tempConverter">
+<h2 id = "title">THE Amazing Temperature Converter!!!</h2>
+<div id = "converter">
+	<form id = "tempConverter">
 		<p>Select the scale you want to convert to.</p>
 			<input id=rdoFah type="radio" name="scale" value="Fahrenheit"> to Fahrenheit
 			<input id=rdoCel type="radio" name="scale" value="Celsius"> to Celsius
@@ -18,8 +19,11 @@
 <!-- 		<br><br>
 			<button type="button"  id = "btnConvert"> Convert Temperature</button>
 			<input type="reset" value="Reset">	 -->
-</form>
+	</form>
+</div>
+<div id = "result">
 <h3 id = "tempConverted"></h3>
+</div>
 
 <script type="text/javascript" src="./main.js"></script>
 </body>

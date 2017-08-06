@@ -1,7 +1,28 @@
 body {
 	background-color: gold;
+	width: 100%;
+}
+#title {
+	width: 100%;
+	text-align: center;
+	border-bottom: 3px dashed beige;
+	padding-bottom: 12px;
 }
 
+
+
+#tempConverter {
+	text-align: center;
+	font-size: 24px;
+}
+
+#result {
+	text-align: center;
+	border-top: 3px dashed beige;
+	margin-top: 12px;
+	font-size: 26px;
+}
+/* Text Styling for temperature ranges*/
 h3.high {
 	color: red;
 }
