@@ -1,14 +1,4 @@
-//console.log('in main.js');
 var temperature = document.getElementById('temperature');
-
-//Get a reference to the button element in the DOM
-// var button = document.getElementById("btnConvert");
-// button.addEventListener("click", temp);
-// btnPress();
-// function btnPress() {
-// 	var button = document.getElementById("btnConvert");
-//   button.addEventListener("click", temp);
-// }
 
 // This allows the diplayed temp calculation to update after each number that is entered into the text field
 document.getElementById("temperature").addEventListener("keyup", temp);
@@ -47,8 +37,8 @@ return tempF;
 function scale (conversion, t) {
 var level;
 var format;
-var start;	
-	if (t === "c") { 
+var start;
+	if (t === "c") {
 		var format = "°C";
 		var start = "°F"
 			if (conversion > 32) {
@@ -57,7 +47,7 @@ var start;
 			level = "low";
 		} else {
 			level = "mid";
-		}	
+		}
 	} else {
 		var format = "°F";
 		var start = "°C"
@@ -68,18 +58,16 @@ var start;
 		} else {
 			level = "mid";
 		}
-		
+
 	}
 
 var string = "";
 var container = document.getElementById('tempConverted');
 if (!isNaN(conversion) === true) {
-string += '<h3 id = "tempConverted" class =' + level + '>' + temperature.value + start + ' is '  + conversion.toFixed(2) + format + '</h3>' 
+string += '<h3 id = "tempConverted" class =' + level + '>' + temperature.value + start + ' is '  + conversion.toFixed(2) + format + '</h3>'
 } else {
- string += '<h3 id = "tempConverted" class ="black"> Please select a conversion and place a value in the box</h3>' 
+ string += '<h3 id = "tempConverted" class ="black"> Please select a conversion and place a value in the box</h3>'
 }
 
 container.innerHTML = string;
 }
-
- 
