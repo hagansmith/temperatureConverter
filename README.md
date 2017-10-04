@@ -63,8 +63,8 @@ button.addEventListener("click", determineConverter);
 3. This will show at: `http://localhost:8080` in your internet browser.
 
 ```
-git clone git@github.com:hagansmith/seasonal-sales.git
-cd seasonal-sales
+git clone git@github.com:hagansmith/temperatureConverter.git
+cd temperatureConverter
 npm install http-server -g
 hs -c-1
 ```
